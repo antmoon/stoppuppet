@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tyranny's Puppet</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add ethers.js -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <object type="image/svg+xml" data="logo.svg" width="200" height="200">
+                Your browser does not support SVG
+            </object>
+            <h1>Putin's Puppet</h1>
+            <p>Exposing the puppets who stand with tyranny.</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Stand with Ukraine. Fight Against Tyranny.</h2>
+            <p>When leaders choose dictatorship over democracy, it's up to us to hold them accountable.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="video-container">
+            <!-- Video thumbnails -->
+            <div class="video-thumbnail" onclick="showVideo('video1')">
+                <p>Trump-Calls-Zelensky-a-Dictator</p>
+            </div>
+            <div class="video-thumbnail" onclick="showVideo('video2')">
+                <p>Trump-say-Ukraine-started-the-war</p>
+            </div>
+            <div class="video-thumbnail" onclick="showVideo('video3')">
+                <p>Video 3</p>
+            </div>
+        </div>
+
+        <!-- Hidden videos -->
+        <video id="video1" controls>
+            <source src="Trump-Calls-Zelensky-a-Dictator-as-Tensions-Rise-Over-the-Russia-Ukraine-War.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video2" controls>
+            <source src="Trump-say-Ukraine-started-the-war.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video3" controls>
+            <source src="Clinton-call-Trump-puppet.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <script>
+            function showVideo(videoId) {
+                // Hide all videos
+                var videos = document.querySelectorAll('video');
+                videos.forEach(function (video) {
+                    video.style.display = 'none';
+                    video.pause(); // Pause any playing video
+                });
+
+                // Show the clicked video
+                var videoElement = document.getElementById(videoId);
+                videoElement.style.display = 'block';
+                videoElement.play(); // Play the video
+            }
+        </script>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About "tyranny's Puppet"</h2>
+            <p>This project is a bold statement against political figures who choose to align with Putin's regime,
+                ignoring the suffering of innocent lives. We use satire, humor, and powerful visuals to expose their
+                complicity.</p>
+            <p>The goal is simple: raise awareness, unite people, and demand justice for Ukraine and its people.</p>
+            <p>In the face of tyranny and aggression, we must ask ourselves: who stands with the oppressed, and who
+                stands with the oppressor? The "Putin's Puppet" meme project is more than just a critique; it’s a bold
+                statement
+                of solidarity with the people of Ukraine, whose lives, homes, and futures have been torn apart by
+                Putin's unprovoked invasion.</p>
+            <p>When influential figures like Donald Trump choose to align with a brutal dictator over the freedom and
+                sovereignty of a nation, it's not just politics — it's a betrayal of human decency. "Putin's Puppet"
+                pulls back the curtain, exposing the truth that some are willing to dance to Putin's strings, while
+                millions suffer in silence.</p>
+            <p>This project is about more than memes — it’s about giving a voice to those whose cries for help echo in
+                the darkness. It’s about standing up against the tide of disinformation and manipulation, and reminding
+                the world that peace, justice, and freedom must always come before political games.</p>
+            <p>Through sharp, unapologetic humor and piercing visuals, "Putin's Puppet" seeks to shine a light on those
+                who have chosen to ignore the suffering of innocent people, and to call for change. Because in this
+                fight for the future, silence is complicity.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="1.jpg" alt="Meme 1">
+                <img src="2.jpg" alt="Meme 2">
+                <img src="3.jpg" alt="Meme 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Token Purchase Section -->
+    <section id="buy-tokens">
+        <div class="container">
+            <h2>Buy STOPPUPPET Coin</h2>
+            <p>Support the cause! Buy STOPPUPPET Coin and join the movement.Use the coin against the puppet and show our
+                strength!</p>
+            <label for="ethAmount">Amount of BNB:</label> <!-- Update ETH to BNB -->
+            <input type="number" id="ethAmount" placeholder="Enter BNB amount" min="0.01" step="0.01">
+            <button class="btn" id="buyTokensBtn">Buy Tokens</button>
+            <p id="status"></p>
+        </div>
+    </section>
+
+
+    <!-- Call to Action Section -->
+    <section id="cta">
+        <div class="container">
+            <h2>Join the Movement</h2>
+            <p>Your voice matters. Share our memes, raise awareness, and stand up for what’s right. Together, we can
+                make a difference.</p>
+            <a href="https://donate-link.com" class="btn">Support Ukraine</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Putin's Puppet | All Rights Reserved</p>
+            <p>Follow us: <a href="https://twitter.com/putinspuppet">Twitter</a> | <a
+                    href="https://instagram.com/putinspuppet">Instagram</a></p>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+ <script src="script.js"></script>
+</body>
+
+</html>

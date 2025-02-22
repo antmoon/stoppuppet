@@ -1,0 +1,197 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #222;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #e74c3c; /* Red color for urgency */
+}
+
+p {
+    color: #fff;
+    margin: 10px 0;
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+/* Header Section */
+#header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+}
+
+#header h1 {
+    font-size: 3em;
+}
+
+#header p {
+    font-size: 1.2em;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('honor.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+#hero .btn {
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #c0392b;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #444;
+}
+
+#about p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 60px 0;
+    background-color: #333;
+}
+
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Token Purchase Section */
+#buy-tokens {
+    padding: 60px 0;
+    background-color: #444;
+    text-align: center;
+}
+
+#buy-tokens input {
+    padding: 10px;
+    font-size: 1.1em;
+    margin: 10px 0;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#buy-tokens button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buy-tokens button:hover {
+    background-color: #c0392b;
+}
+
+#buy-tokens #status {
+    color: #fff;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+/* Call to Action Section */
+#cta {
+    background-color: #e74c3c;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#cta h2 {
+    font-size: 2.5em;
+}
+
+#cta p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Footer Section */
+footer {
+    padding: 30px 0;
+    background-color: #222;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+.video-container {
+    background-color: #e74c3c;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.video-thumbnail {
+    width: 200px;
+    height: 112px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+video {
+    max-width: 100%;
+    display: none; /* Hide video initially */
+}
